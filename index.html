@@ -8,6 +8,20 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
+<body>
+
+<p>Notice how this content isn't centered. To center it we need to wrap it</p>
+	<section>
+		<h1>Here is some centered content, by wrapping it with a section tag</h1>
+		<p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque est, egestas tristique quam nec, efficitur efficitur massa. Aenean in faucibus felis. Mauris ut ligula vestibulum, varius metus vitae, maximus orci. </em></p>
+
+		<p>Notice how if you change the width of your browser it stays in the center</p>
+	</section>
+
+	<section>
+		<p>This is a simple nav bar, which is full width of the page</p>
+	</section>
+	<nav>
 		<h3>Wellington Networking</h3>
 		<a href="#one">Man Hole Covers</a>
 		<a href="#two">Cables</a>
@@ -33,7 +47,37 @@
 			<h1>Networks of Wellington</h1>
 			<p>There is also a section tag inside it to center this content</p>
 		</section>
-		
+	</header>
+
+	
+
+	<section>
+		<h3>Grids</h3>
+
+		<p>Use grids to divide up or layout content. For example, putting an image on the left, and lots to text on the right</p>
+
+		<p>I've added a 'show' class so you can see where the grids are. Use chrome's web inspector tools to take a closer look</p>
+
+
+		<div class="g-row show"> <!--first wrap all grid cells in a g-row-->
+			<div class="g-50 show">
+				50% width .g-50
+			</div>
+			<div class="g-50 show">
+				50% width .g-50
+			</div>
+
+			<div class="g-30 show">
+				30% width .g-30
+			</div>
+
+			<div class="g-70 show">
+				70% width .g-70
+			</div>
+		</div>
+
+		<p>The other cool things about grids, is that 50% width means 50% of the div's <em>parent</em>. This means you can put cells in cells to get infinitly smaller sizes. The possiblities are endless!</p>
+
 		<div class="g-row show"> <!--first wrap all grid cells in a g-row-->
 			<div class="g-50 show">
 				<div class="g-50 show">
